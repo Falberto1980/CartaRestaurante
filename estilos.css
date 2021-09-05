@@ -1,0 +1,154 @@
+﻿body {
+    background-image: url('imagenes/fondo.jpeg');
+    background-repeat: no-repeat;
+    width: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+}
+
+
+
+h1 {
+    color: #fff;
+    font-family: courier;
+    text-align: center;
+    font-size: 5em;
+}
+
+
+h2 {
+    color: #fff;
+    font-size: 48px;
+    font-family: courier;
+    text-align: center;
+}
+
+
+
+
+
+#footer {
+    padding: 30px;
+    text-align: center;
+    color: lightgrey;
+    margin-top: 120px;
+    font-size: 30px;
+}
+
+    #footer a {
+        color: lightgrey;
+        font-style: none;
+    }
+
+    #footer ul {
+        list-style: none;
+    }
+
+
+
+    #footer i {
+        size: 25;
+        margin-left: 10px;
+    }
+
+nav {
+    position: relative;
+    background-color: #333;
+    overflow: hidden;
+}
+
+    nav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+.centered {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    left: 0px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        opacity: 80%;
+    }
+
+        nav ul li {
+            float: left;
+        }
+
+    nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        padding: 10px 16px;
+        text-decoration: none;
+    }
+
+        nav li a:hover {
+            background-color: rgb(33, 163, 0);
+        }
+
+#cuerpo {
+    margin-top: 75px;
+    block-size: inherit;
+    width: auto;
+    height: 100%;
+    justify-content: center;
+    display: inline-block;
+}
+
+#menu_lista {
+    display: inline-flex;
+}
+
+#cuerpo ul {
+    margin-top: 75px;
+    padding-left: 400px;
+}
+
+    #cuerpo ul li {
+        list-style: none;
+        padding-top: 50px;
+    }
+
+#cuerpo h3 {
+    font-size: 30px;
+    color: #ccc;
+    text-align: center;
+    padding-right: 700px;
+    padding-left: 100px;
+}
+
+.menu_lista {
+    margin-top: 30px;
+    font-size: 25px;
+    color: white;
+}
+
+.menu_lista_item {
+    padding-bottom: 10px;
+}
