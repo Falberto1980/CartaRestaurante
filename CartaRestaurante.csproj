@@ -79,6 +79,7 @@
     <Content Include="imagenes\pizzeria.jpeg" />
     <Content Include="index.html" />
     <Content Include="menu.html" />
+    <Content Include="sobrenosotros.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
