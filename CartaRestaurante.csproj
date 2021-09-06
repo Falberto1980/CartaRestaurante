@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="contacto.html" />
     <Content Include="estilos.css" />
     <Content Include="imagenes\2C0.gif" />
     <Content Include="imagenes\b67a645a114efab080c0a306b5eff278_Pizzas_Caseras_1200_600.jpg" />
