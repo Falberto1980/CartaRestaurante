@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pizzeria los 3 Tipitos</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<header>
+			<p>
+				<h1>
+					Pizzeria los 3 Tipitos
+				</h1>
+			</p>
+		
+	</header>
+
+	<h2>
+			Proba nuestras pizzas
+		</h2>
+
+		<nav>
+				<ul>
+					<li><b><a href="index.html">Inicio</a></b></li>
+					<li><b><a href="menu.html">Nuestro menu</a></b></li>
+					<li><b><a href="#footer">Contacto</a></b></li>
+					<li><b><a href="sobrenosotros.html">Sobre nosotros</a></b></li>
+                    <li><b><a href="contacto.html">Contacto</a></b></li>
+				  </ul>
+		</nav>
+
+
+		<div id="cuerpo">
+            <!--Dejo action vacio, ya que no estamos enviando ningun dato, solo 
+            si se conecta a una db-->
+			<form action="" method="POST">
+                <label style="color: aliceblue;font-weight: bold;" for="nombre" required>Nombre</label>
+                <input type="text" name="nombre">
+                <p></p>
+                <label style="color: aliceblue;font-weight: bold;" for="Apellido" required>Apellido</label>
+                <input type="text" name="Apellido">
+                <p></p>
+                <label style="color: aliceblue;font-weight: bold;" required>Email</label>
+                <input type="email" name="email">
+                <p></p>             
+                <label style="color: aliceblue;font-weight: bold;">Comentario</label>
+                <p></p>
+                <textarea></textarea>
+                <p></p>
+                <input type="submit"  value="Enviar">
+
+            </form>
+		</div>
+
+		<footer id="footer">
+		<ul>
+		<li><a href="#">Youtube<i class="fa fa-youtube"></i></a> Los3tipitos</li>
+		<li><a href="#">Facebook<i class="fa fa-facebook"></i></a> Los3tipitos</li>
+		<li><a href="#">Twitter<i class="fa fa-twitter"></i></a> @los3tipitos</li>
+		<li>Dirección Yatay 230 esquina Diaz Velez </li>
+		</ul>
+	</footer>
+
+</body>
+</html>
