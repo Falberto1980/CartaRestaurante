@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<title>Pizzeria los 3 Tipitos</title>
@@ -16,7 +16,7 @@
 		
 	</header>
 
-	<section>
+	
 		<h2>
 			Proba nuestras pizzas
 		</h2>
@@ -25,44 +25,36 @@
 			<ul>
 				<li><b><a href="index.html">Inicio</a></b></li>
 				<li><b><a href="menu.html">Nuestro menu</a></b></li>
-				<li><b><a href="#footer">Contacto</a></b></li>
 				<li><b><a href="sobrenosotros.html">Sobre nosotros</a></b></li>
 				<li><b><a href="contacto.html">Contacto</a></b></li>
 			</ul>
 		</nav>
 
+	<section>
+		<div>
+			<form action="#" target="" method="get" name="DatosPersonales">
 
-		<div id="cuerpo">
-			<!--Dejo action vacio, ya que no estamos enviando ningun dato, solo
-		si se conecta a una db-->
-			<form action="" method="POST">
-				<label style="color: aliceblue;font-weight: bold;" for="nombre">Nombre</label>
-				<input type="text" name="nombre" required="">
-				<p></p>
-				<label style="color: aliceblue;font-weight: bold;" for="Apellido">Apellido</label>
-				<input type="text" name="Apellido" required="">
-				<p></p>
-				<label style="color: aliceblue;font-weight: bold;">Email</label>
-				<input type="email" name="email" required="">
-				<p></p>
-				<label style="color: aliceblue;font-weight: bold;">Comentario</label>
-				<p></p>
-				<textarea></textarea>
-				<p></p>
-				<input type="submit" value="Enviar">
+				<label for="nombre">Nombre</label>
+				<input type="text" name="nombre" id="nombre" placeholder="Nombre" />
 
+				<label for="apellidos">Apellidos</label>
+				<input type="text" name="apellidos" id="apellidos" placeholder="Apellido" />
+
+				<label for="email" >Email</label>
+				<input type="email" name="email" id="email" placeholder="Mail" required />
+
+				<label for="asunto">Asunto</label>
+				<input type="text" name="asunto" id="asunto" placeholder="Asunto" />
+
+				<label for="mensaje">Mensaje</label>
+				<textarea name="mensaje" for="mensaje" placeholder="Describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+
+				<input type="submit" name="enviar" value="Enviar" />
 			</form>
 		</div>
 	</section>
 
-		<footer id="footer">
-		<ul>
-		<li><a href="#">Youtube<i class="fa fa-youtube"></i></a> Los3tipitos</li>
-		<li><a href="#">Facebook<i class="fa fa-facebook"></i></a> Los3tipitos</li>
-		<li><a href="#">Twitter<i class="fa fa-twitter"></i></a> @los3tipitos</li>
-		<li>Dirección Yatay 230 esquina Diaz Velez </li>
-		</ul>
-	</footer>
+
 
 </body>
 </html>
