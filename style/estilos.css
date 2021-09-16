@@ -1,5 +1,5 @@
 ﻿body {
-    background-image: url('imagenes/fondo.jpeg');
+    background-image: url('../imagenes/fondo.jpeg');
     background-repeat: no-repeat;
     width: auto;
     background-attachment: fixed;
@@ -7,6 +7,17 @@
     margin: 0px;
 }
 
+#error{
+	display: block;
+	float: left;
+	font-size: 20px;
+    text-align: center;
+    width: 100px;
+    color: red;
+}
+#error label{
+    padding-bottom: 4px;
+}
 
 h1 {
     color: #fff;
@@ -121,7 +132,13 @@ nav {
     display: inline-block;
 
 }
-
+#error label{
+    
+        display: block;
+        float: left;
+        width: 70px;
+    
+}
 
 #menu_lista {
     display:inline-flex;
