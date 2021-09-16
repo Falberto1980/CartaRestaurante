@@ -7,17 +7,6 @@
     margin: 0px;
 }
 
-#error{
-	display: block;
-	float: left;
-	font-size: 20px;
-    text-align: center;
-    width: 100px;
-    color: red;
-}
-#error label{
-    padding-bottom: 4px;
-}
 
 h1 {
     color: #fff;

@@ -1,52 +1,82 @@
 var nombre = document.getElementById('nombre');
 var apellido = document.getElementById('apellido');
 var email = document.getElementById('email');
-var error = document.getElementById('error');
+var asunto = document.getElementById('asunto');
 
 
+//primera forma
+
+/*
 function enviarFormulario(){
 
     console.log('Enviando formulario..');
 
-    var mensajesError = [];
-
     if(nombre.value === null || nombre.value === ''){
-        mensajesError.push('ingresa tu nombre');
-    }
+        nombre.style.border="2px solid red";
+        nombre.placeholder = "Ingrese nombre";   
+      }
 
     if(apellido.value === null || apellido.value === ''){
-        mensajesError.push('ingresa tu apellido');
-    }
+        apellido.style.border="2px solid red";
+        apellido.placeholder = "ingrese apellido";
+      }
 
     if(email.value === null || email.value === ''){
-        mensajesError.push('Ingresa tu email');
-    }
+        email.style.border="2px solid red";
+        email.placeholder = "Ingrese email";
+      }
 
-    error.innerHTML = mensajesError.join(', ');
+      if(email.value === null || email.value === ''){
+        email.style.border="2px solid red";
+        email.placeholder = "Ingrese email";
+      }
+
+      if(asunto.value === null || asunto.value === ''){
+        asunto.style.border="2px solid red";
+        asunto.placeholder = "Ingrese asunto";
+      }
 
     return false;
 }
+*/
 
+//segunda forma
 
-//fixeando, no borrar
-/*
 var form = document.getElementById('formulario');
-    form.addEventListener('enviar', function(evt){
+    form.addEventListener('submit', function(evt){
         evt.preventDefault();
-        var mensajesError = [];
+        
 
         if(nombre.value === null || nombre.value === ''){
-            mensajesError.push('ingresa tu nombre');
-        }
+            nombre.style.border="2px solid red";
+            nombre.placeholder = "Ingrese nombre";   
+          }
     
         if(apellido.value === null || apellido.value === ''){
-            mensajesError.push('ingresa tu apellido');
-        }
+            apellido.style.border="2px solid red";
+            apellido.placeholder = "ingrese apellido";
+          }
     
         if(email.value === null || email.value === ''){
-            mensajesError.push('Ingresa tu email');
-        }
+            email.style.border="2px solid red";
+            email.placeholder = "Ingrese email";
+          }
     
-        error.innerHTML = mensajesError.join(', ');
+          if(email.value === null || email.value === ''){
+            email.style.border="2px solid red";
+            email.placeholder = "Ingrese email";
+          }
+    
+          if(asunto.value === null || asunto.value === ''){
+            asunto.style.border="2px solid red";
+            asunto.placeholder = "Ingrese asunto";
+          }
+    
 
-    });*/
+    });
+
+    //Como mejoria, podria hacerse un array donde almacene errores
+    //pero esta fue mi primer solucion
+
+    //luego al enviar nuevamente, se tendria que actualizar,
+    //estoy buscando un fix
