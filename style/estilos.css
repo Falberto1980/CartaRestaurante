@@ -177,6 +177,7 @@ form {
         width: 72px;
         font-weight: bold;
         display: inline-block;
+        cursor: pointer;
     }
 
 
@@ -206,6 +207,24 @@ form {
     form input[type="submit"]:hover {
         cursor: pointer;
     }
+    .formulario__mensaje{
+        background: #f66060;
+        display: none;
+    }
+
+.formulario__mensaje-activo{
+    display:block;
+}
+.formulario__mensaje__exito {
+    text-align: center;
+    color: #119200;
+    font-weight: bold;
+    display: none;
+}
+
+.formulario__mensaje__exito-activo{
+    display:block;
+}
 
 
 

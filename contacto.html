@@ -32,34 +32,41 @@
 			</ul>
 		</nav>
 
-	<section>
-	
-			
+		<section>
 
-			<form action="" id='formulario'>
+
+			<!-- modificado por jony para aplicar validacion JS -->
+			<form action="" class="formulario" id="formulario">
 
 				<label for="nombre">Nombre</label>
-				<input type="text" name="nombre" id='nombre'/>
+				<input type="text" name="nombre" id='nombre' />
 
-				<label for="apellidos">Apellidos</label>
-				<input type="text" name="apellido" id='apellido'/>
 
-				<label for="email" >Email</label>
-				<input type="email" name="email" id='email'/>
+				<label for="apellido">Apellidos</label>
+				<input type="text" name="apellido" id='apellido' />
+
+				<label for="email">Email</label>
+				<input type="email" name="email" id='email' />
 
 				<label for="asunto">Asunto</label>
-				<input type="text" name="asunto" id='asunto'/>
+				<input type="text" name="asunto" id='asunto' />
 
 				<label for="mensaje">Mensaje</label>
 				<textarea name="mensaje" for="mensaje" placeholder="Describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
 
-				<input type="submit" onclick='return enviarFormulario();' name="submit" value="Enviar" />
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><b>Error:</b> por favor rellene el formulario correctamente</p>
+				</div>
+				<div class="formulario__enviar">
+					<input type="submit" onclick='return enviarFormulario();' clas="formulario__enviar__btn" name="submit" value="Enviar" />
+                    <p class="formulario__mensaje__exito" id="formulario__mensaje__exito">Formulario enviado con exito!</p>
+				</div>
 			</form>
 			<div id="error"></div>
-			<script type='text/javascript'  src='js/formulario.js'></script>
+			<script type='text/javascript' src='js/formulario.js'></script>
 
 
-	</section>
+		</section>
 
 
 
